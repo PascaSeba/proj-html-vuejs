@@ -53,9 +53,9 @@ header .socials li {
 }
 
 #jumbo_overlay {
-    width: max-content;
-    height: max-content;
-    background-color: black
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671)
 }
 
 header #jumbotron .main_nav ul li {
