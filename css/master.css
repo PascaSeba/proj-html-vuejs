@@ -43,19 +43,19 @@ header .socials li {
 /* Secondo Header + JUMBOTRON*/
 
 #jumbotron {
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     height: 95vh;
     background-image: url(../img/jumbotron.png);
     background-position: bottom;
     background-size: cover;
+    color: white;
+    position: relative;
 }
 
 #jumbo_overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.671)
+    background-color: rgba(0, 0, 0, 0.699)
 }
 
 header #jumbotron .main_nav ul li {
@@ -68,11 +68,179 @@ header #jumbotron .main_nav ul li {
     justify-content: space-around;
     align-self: flex-start;
     padding: 10px;
-    color: white;
+}
+
+#jumbotron .jumbo_text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#jumbotron .jumbo_text>* {
+    padding: 5px;
+}
+
+.jumbo_text button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#jumbotron .jumbo_text h1 {
+    font-size: 5em;
 }
 
 
-/* Fine della sezione dei due header */
+/* Fine della sezione dei due header + jumbotron */
 
 
-/* Inizio della sezione del JUMBOTRON */
+/* Sezione del tipo di offerte */
+
+#offers {
+    width: 100%;
+    padding: 70px;
+    background-color: #eef4ed;
+    justify-content: center;
+}
+
+#offers .human,
+#offers .core,
+#offers .performances {
+    width: calc(67% / 3);
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    padding: 40px;
+    margin: 10px;
+}
+
+#offers .human>*,
+#offers .core>*,
+#offers .performances>* {
+    padding: 3px;
+    justify-content: center;
+}
+
+#offers .human .profile,
+#offers .speedometer {
+    width: 55px;
+    height: 55px;
+    padding: 11px;
+    text-align: center;
+}
+
+#offers .circle {
+    width: 52px;
+    height: 52px;
+    padding: 6px;
+    text-align: center;
+}
+
+#offers .human .profile,
+#offers .circle,
+#offers .speedometer {
+    background-color: #daeced;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+/* Fine della sezione del tipo di offerte */
+
+
+/* Sezione delle informazioni sulla compagnia */
+
+.company {
+    width: 100%;
+    height: fit-content;
+}
+
+
+/* ---Forse ti occore modificare questo se devi cambiare grandezza---
+    ---carattere o padding/margin e simili--- */
+
+.company_head {
+    width: 35%;
+    height: fit-content;
+    margin-left: 20%;
+    align-self: center;
+    padding: 5px;
+}
+
+.company_head h6,
+.company_head h1,
+.company_head p:first-child {
+    padding-bottom: 5px;
+}
+
+.company_head .tradition,
+.company_head .security,
+.company_head .certificate,
+.company_head .graduate {
+    width: 49%;
+    padding-top: 35px;
+    display: inline-block;
+}
+
+.company_head h3 {
+    padding-bottom: 5px;
+}
+
+.company img {
+    object-fit: cover;
+    width: 48%;
+    height: 80vh;
+    padding-left: 25px;
+}
+
+
+/* Fine della sezione delle informazioni sulla compagnia */
+
+
+/* Sezione dei servizi della compagnia */
+
+.services_container {
+    width: 100%;
+    height: 100vh;
+    background-color: #111117;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.services_container .services {
+    width: 60%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.services h6 {
+    color: #05817e;
+    font-size: 0.8em;
+}
+
+.services h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.services .explane {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services .explane p {
+    color: #b8c1d0;
+    display: inline-block;
+    width: 70%;
+}
+
+.services .explane button {
+    display: inline-block;
+}
+
+
+/* Fine della sezione dei servizi della compagnia */
