@@ -13,6 +13,11 @@ body {
     display: flex;
 }
 
+.container {
+    width: 60%;
+    height: fit-content;
+}
+
 
 /* Sezione dei due header */
 
@@ -210,39 +215,39 @@ header #jumbotron .main_nav ul li {
     padding-bottom: 100px;
 }
 
-.services_container .services {
-    width: 60%;
-    height: 100%;
-}
-
 .services h6,
-.pricing h6 {
+.pricing h6,
+.news h6 {
     color: #05817e;
     font-size: 0.8em;
 }
 
 .services>h1,
-.pricing>h1 {
+.pricing>h1,
+.news h1 {
     color: white;
     font-size: 2.5em;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.services .explane {
+.explane {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 40px;
 }
 
-.services .explane p {
+.services .explane p,
+.news p {
     color: #b8c1d0;
     display: inline-block;
     width: 70%;
+    font-size: 0.85em;
 }
 
-.services .explane button {
+.services .explane button,
+.news button {
     display: inline-block;
 }
 
@@ -304,8 +309,6 @@ header #jumbotron .main_nav ul li {
 }
 
 .pricing {
-    width: 60%;
-    height: fit-content;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
@@ -317,6 +320,7 @@ header #jumbotron .main_nav ul li {
 
 .pricing p {
     color: #7a7b7a;
+    font-size: 0.85em;
 }
 
 .prices {
@@ -417,6 +421,72 @@ header #jumbotron .main_nav ul li {
 
 
 /* Sezione delle NEWS  */
+
+.news_container {
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+
+.news {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.news>h1 {
+    color: black;
+}
+
+.news .explane {
+    padding-bottom: 50px;
+}
+
+.last_news {
+    width: 100%;
+    height: fit-content;
+}
+
+.last_news .new {
+    width: calc(95%/3);
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.background_one {
+    background-image: url(../img/news-1.jpg);
+}
+
+.background_two {
+    background-image: url(../img/news-2.jpg);
+}
+
+.background_three {
+    background-image: url(../img/news-3.jpg);
+}
+
+.background_one,
+.background_two,
+.background_three {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.new h3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 35px;
+    width: 80%;
+}
 
 
 /* Fine della sezione delle NEWS  */
