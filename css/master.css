@@ -18,6 +18,11 @@ body {
     height: fit-content;
 }
 
+.big_container {
+    width: 100%;
+    height: fit-content;
+}
+
 
 /* Sezione dei due header */
 
@@ -104,7 +109,6 @@ header #jumbotron .main_nav ul li {
 /* Sezione del tipo di offerte */
 
 #offers {
-    width: 100%;
     padding: 100px;
     background-color: #eef4ed;
     justify-content: center;
@@ -180,6 +184,10 @@ header #jumbotron .main_nav ul li {
     padding-bottom: 5px;
 }
 
+.company_head h1 {
+    font-size: 2.9em;
+}
+
 .company_head .tradition,
 .company_head .security,
 .company_head .certificate,
@@ -207,8 +215,6 @@ header #jumbotron .main_nav ul li {
 /* Sezione dei servizi della compagnia */
 
 .services_container {
-    width: 100%;
-    height: fit-content;
     background-color: #111117;
     justify-content: center;
     padding-top: 100px;
@@ -217,16 +223,19 @@ header #jumbotron .main_nav ul li {
 
 .services h6,
 .pricing h6,
-.news h6 {
+.news h6,
+.newsletter_info>h6,
+.form_camp>h6 {
     color: #05817e;
     font-size: 0.8em;
 }
 
 .services>h1,
 .pricing>h1,
-.news h1 {
+.news h1,
+.newsletter_info>h1 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.9em;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -302,8 +311,6 @@ header #jumbotron .main_nav ul li {
 /* Sezione dei prezzi */
 
 .pricing_container {
-    width: 100%;
-    height: fit-content;
     justify-content: center;
     background-color: #eef4ed;
 }
@@ -318,7 +325,9 @@ header #jumbotron .main_nav ul li {
     color: black;
 }
 
-.pricing p {
+.pricing p,
+.newsletter_info p,
+.form_camp>p {
     color: #7a7b7a;
     font-size: 0.85em;
 }
@@ -374,6 +383,7 @@ header #jumbotron .main_nav ul li {
 
 .main_info p {
     color: #05817e;
+    font-size: 0.85em;
 }
 
 .main_info .value {
@@ -423,8 +433,6 @@ header #jumbotron .main_nav ul li {
 /* Sezione delle NEWS  */
 
 .news_container {
-    width: 100%;
-    height: 70vh;
     justify-content: center;
 }
 
@@ -490,3 +498,106 @@ header #jumbotron .main_nav ul li {
 
 
 /* Fine della sezione delle NEWS  */
+
+
+/* Sezione di iscrizione alla Newsletter */
+
+.newsletter_container {
+    background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    justify-content: center;
+}
+
+.newsletter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+
+.newsletter_info {
+    width: calc(95%/2);
+    margin-right: 4%;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsletter_info h1 {
+    font-size: 2.9em;
+}
+
+.subscribe {
+    width: calc(95%/2);
+    height: 19vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subscribe input,
+.subscribe button {
+    width: fit-content;
+    outline: none;
+}
+
+.subscribe input {
+    padding: 10px;
+    min-width: 80%;
+    min-height: 30%;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    background-color: #058283;
+    padding: 10px;
+    font-size: 1em;
+    width: 30%;
+    border: none;
+    color: white;
+}
+
+
+/* Fine della sezione di iscrizione alla Newsletter */
+
+
+/* Sezione di invio del messaggio */
+
+.message {
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+
+#message_container {
+    width: 75%;
+    height: 100%;
+    border: 1px solid red;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form_camp h1 {
+    font-size: 2.9em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form_camp {
+    width: calc(95%/2);
+    height: fit-content;
+    flex-direction: column;
+}
+
+form {
+    padding-top: 40px;
+}
+
+
+/* Fine della sezione di invio del messaggio */
