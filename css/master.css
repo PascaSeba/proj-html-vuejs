@@ -100,7 +100,7 @@ header #jumbotron .main_nav ul li {
 
 #offers {
     width: 100%;
-    padding: 70px;
+    padding: 100px;
     background-color: #eef4ed;
     justify-content: center;
 }
@@ -203,33 +203,37 @@ header #jumbotron .main_nav ul li {
 
 .services_container {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-color: #111117;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .services_container .services {
     width: 60%;
     height: 100%;
-    border: 1px solid white;
 }
 
-.services h6 {
+.services h6,
+.pricing h6 {
     color: #05817e;
     font-size: 0.8em;
 }
 
-.services h1 {
+.services>h1,
+.pricing>h1 {
     color: white;
     font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .services .explane {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .services .explane p {
@@ -242,5 +246,177 @@ header #jumbotron .main_nav ul li {
     display: inline-block;
 }
 
+.services .service_one {
+    width: 100%;
+    justify-content: center;
+}
+
+.services .service_distance {
+    margin-bottom: 2.5%;
+}
+
+.service_one .service_col {
+    width: calc(95% / 3);
+    background-color: grey;
+    height: 250px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #19191f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.centered_col {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.service_col h3 {
+    color: white;
+}
+
+.service_col p {
+    color: #b8c1d0;
+    font-size: 0.9em;
+}
+
+.service_col i {
+    color: #05817e;
+    font-size: 2em;
+}
+
+.service_col button {
+    width: fit-content;
+}
+
 
 /* Fine della sezione dei servizi della compagnia */
+
+
+/* Sezione dei prezzi */
+
+.pricing_container {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    background-color: #eef4ed;
+}
+
+.pricing {
+    width: 60%;
+    height: fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.pricing>h1 {
+    color: black;
+}
+
+.pricing p {
+    color: #7a7b7a;
+}
+
+.prices {
+    flex-direction: row;
+}
+
+.prices .price {
+    width: calc(95%/3);
+    height: 50vh;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.popular_position {
+    position: relative;
+}
+
+#popular {
+    position: absolute;
+    width: 22%;
+    height: 1%;
+    padding: 20px;
+    color: white;
+    background-color: #00a6a6;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    font-size: 0.7em;
+    top: 3.5%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price .main_info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_info h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main_info p {
+    color: #05817e;
+}
+
+.main_info .value {
+    font-size: 1.3em;
+}
+
+.main_info .number {
+    font-size: 1.9em;
+}
+
+.main_info .time {
+    font-size: 0.9em;
+}
+
+.main_info i {
+    font-size: 2.5em;
+    color: #05817e;
+}
+
+.price .services_list {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.services_list p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.85em;
+}
+
+.checkmark {
+    font-weight: 900;
+}
+
+.prices .centered_col {
+    height: 54vh;
+    margin-top: 35px;
+}
+
+
+/* Fine della sezione dei prezzi */
+
+
+/* Sezione delle NEWS  */
+
+
+/* Fine della sezione delle NEWS  */
