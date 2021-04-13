@@ -178,6 +178,17 @@ header #jumbotron .main_nav ul li {
     padding: 5px;
 }
 
+.company_head h6 {
+    color: #05817e;
+    font-size: 0.8em;
+}
+
+.company_head p {
+    color: #848e94;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
 .company_head h6,
 .company_head h1,
 .company_head p:first-child {
@@ -186,6 +197,7 @@ header #jumbotron .main_nav ul li {
 
 .company_head h1 {
     font-size: 2.9em;
+    font-weight: 800;
 }
 
 .company_head .tradition,
@@ -238,6 +250,7 @@ header #jumbotron .main_nav ul li {
     font-size: 2.9em;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: 800;
 }
 
 .explane {
@@ -249,10 +262,11 @@ header #jumbotron .main_nav ul li {
 
 .services .explane p,
 .news p {
-    color: #b8c1d0;
+    color: #848e94;
     display: inline-block;
     width: 70%;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .services .explane button,
@@ -293,6 +307,7 @@ header #jumbotron .main_nav ul li {
 .service_col p {
     color: #b8c1d0;
     font-size: 0.9em;
+    font-weight: 500;
 }
 
 .service_col i {
@@ -328,8 +343,9 @@ header #jumbotron .main_nav ul li {
 .pricing p,
 .newsletter_info p,
 .form_camp>p {
-    color: #7a7b7a;
-    font-size: 0.85em;
+    color: #848e94;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .prices {
@@ -414,11 +430,13 @@ header #jumbotron .main_nav ul li {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    color: #848e94;
+    font-weight: 500;
 }
 
 .checkmark {
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .prices .centered_col {
@@ -546,12 +564,14 @@ header #jumbotron .main_nav ul li {
 
 .subscribe input {
     padding: 10px;
-    min-width: 80%;
-    min-height: 30%;
+    min-width: 90%;
+    min-height: 35%;
     background-color: rgba(255, 255, 255, 0.479);
     border: none;
     font-size: 1em;
     border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .subscribe button {
@@ -587,6 +607,7 @@ header #jumbotron .main_nav ul li {
     font-size: 2.9em;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: 800;
 }
 
 .form_camp {
