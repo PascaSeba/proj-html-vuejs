@@ -30,6 +30,30 @@ select {
     height: fit-content;
 }
 
+.touch_button {
+    background-color: #00a6a6;
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 145px;
+    height: 38px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.touch_button:hover {
+    background-color: #038b8b;
+}
+
+.nav .touch_button {
+    vertical-align: middle;
+    width: 180px;
+    height: fit-content;
+}
+
 
 /* Sezione dei due header */
 
@@ -103,8 +127,9 @@ header .socials li {
 
 .nav {
     width: 58%;
-    height: fit-content;
+    height: 2.55%;
     flex-direction: row;
+    align-items: center;
 }
 
 header #jumbotron .main_nav ul {
@@ -554,8 +579,13 @@ header #jumbotron .main_nav ul li:hover {
     color: #2b373f;
 }
 
+.explane .touch_button {
+    width: 100px;
+}
+
 .news .explane {
     padding-bottom: 50px;
+    align-items: center;
 }
 
 .last_news {
