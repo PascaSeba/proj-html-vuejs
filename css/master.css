@@ -33,18 +33,28 @@ select {
 .touch_button {
     background-color: #00a6a6;
     color: whitesmoke;
-    padding: 10px;
-    font-weight: 500;
-    border: none;
-    outline: none;
+}
+
+.moreall_button,
+.touch_button {
     width: 145px;
     height: 38px;
     cursor: pointer;
     font-size: 0.9em;
     border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    outline: none;
 }
 
-.touch_button:hover {
+.moreall_button {
+    background-color: #00a6a6;
+    color: whitesmoke;
+}
+
+.touch_button:hover,
+.moreall_button:hover {
     background-color: #038b8b;
 }
 
