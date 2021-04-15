@@ -9,6 +9,13 @@ body {
     font-size: 16px;
 }
 
+button,
+input,
+textarea,
+select {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .flexed {
     display: flex;
 }
@@ -40,7 +47,7 @@ header #first_header {
 
 header .date,
 #first_header,
-.contact_infos {
+.head_contact_infos {
     display: flex;
 }
 
@@ -164,6 +171,7 @@ header #jumbotron .main_nav ul li {
 .company {
     width: 100%;
     height: fit-content;
+    position: relative;
 }
 
 
@@ -171,7 +179,7 @@ header #jumbotron .main_nav ul li {
     ---carattere o padding/margin e simili--- */
 
 .company_head {
-    width: 35%;
+    width: 29.9%;
     height: fit-content;
     margin-left: 20%;
     align-self: center;
@@ -198,6 +206,11 @@ header #jumbotron .main_nav ul li {
 .company_head h1 {
     font-size: 2.9em;
     font-weight: 800;
+    color: #2b373f;
+}
+
+.company_head>p {
+    padding-bottom: 30px;
 }
 
 .company_head .tradition,
@@ -215,9 +228,35 @@ header #jumbotron .main_nav ul li {
 
 .company img {
     object-fit: cover;
-    width: 48%;
-    height: 80vh;
+    width: 55%;
+    height: 90vh;
     padding-left: 25px;
+}
+
+.company::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/bullets.png);
+    top: -3.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    height: 7.3%;
+    width: 7.3%;
+    opacity: 0.40;
+}
+
+.company::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/bullets.png);
+    bottom: -3.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    height: 7.3%;
+    width: 7.3%;
+    opacity: 0.40;
 }
 
 
@@ -342,7 +381,9 @@ header #jumbotron .main_nav ul li {
 
 .pricing p,
 .newsletter_info p,
-.form_camp>p {
+.form_camp>p,
+.example p,
+.copyright p {
     color: #848e94;
     font-size: 0.9em;
     font-weight: 500;
@@ -444,6 +485,11 @@ header #jumbotron .main_nav ul li {
     margin-top: 35px;
 }
 
+.pricing>h1 {
+    color: #2b373f;
+    ;
+}
+
 
 /* Fine della sezione dei prezzi */
 
@@ -460,7 +506,7 @@ header #jumbotron .main_nav ul li {
 }
 
 .news>h1 {
-    color: black;
+    color: #2b373f;
 }
 
 .news .explane {
@@ -526,11 +572,11 @@ header #jumbotron .main_nav ul li {
     background-size: cover;
     background-position: right;
     justify-content: center;
+    align-items: center;
+    height: 49vh;
 }
 
 .newsletter {
-    padding-top: 100px;
-    padding-bottom: 100px;
     align-items: center;
     justify-content: center;
     width: 55%;
@@ -581,6 +627,7 @@ header #jumbotron .main_nav ul li {
     width: 30%;
     border: none;
     color: white;
+    border-radius: 5px;
 }
 
 
@@ -591,16 +638,16 @@ header #jumbotron .main_nav ul li {
 
 .message {
     width: 100%;
-    height: 70vh;
+    height: fit-content;
     justify-content: center;
 }
 
 #message_container {
-    width: 75%;
+    width: 60%;
     height: 100%;
-    border: 1px solid red;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
 }
 
 .form_camp h1 {
@@ -610,15 +657,215 @@ header #jumbotron .main_nav ul li {
     font-weight: 800;
 }
 
-.form_camp {
+.form_camp,
+.example {
     width: calc(95%/2);
     height: fit-content;
     flex-direction: column;
 }
 
+.form_camp {
+    margin-right: 15%;
+}
+
 form {
     padding-top: 40px;
+    width: 100%;
+    position: relative;
+}
+
+form input,
+form select {
+    min-width: 60%;
+    min-height: 30%;
+    margin-bottom: 3%;
+}
+
+#select,
+.email {
+    margin-left: 3%;
+}
+
+#number_input::-webkit-outer-spin-button,
+#number_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form input,
+form select,
+#message {
+    outline: none;
+    border: none;
+    font-size: 0.9em;
+    background-color: rgba(211, 211, 211, 0.397);
+    padding: 12px;
+}
+
+#select {
+    color: #5e7e80;
+}
+
+#message {
+    min-width: 123%;
+    min-height: 120px;
+    margin-bottom: 3%;
+    resize: none;
+}
+
+.form_camp>button {
+    width: fit-content;
+}
+
+#name_image {
+    position: absolute;
+    right: 42%;
+    top: 18.6%;
+}
+
+.example {
+    height: 44vh;
+    justify-content: space-between;
+}
+
+.example h3 {
+    color: #3a4a54;
+}
+
+.example_infos {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.example_infos p:nth-child(2) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.example button {
+    width: fit-content;
+}
+
+.example i {
+    color: #05817e;
+    margin-right: 10px;
+    font-size: 1.15em;
+    background-color: rgb(230, 228, 228);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
 }
 
 
 /* Fine della sezione di invio del messaggio */
+
+
+/* Sezione dei due footer  */
+
+.big_footer {
+    background-color: #111117;
+    justify-content: center;
+}
+
+.footer {
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.infos,
+.principal_infos {
+    flex-direction: column;
+    width: calc(93%/4);
+    height: 33vh;
+    justify-content: space-between;
+}
+
+.infos {
+    background-color: #19191f;
+    padding: 35px;
+    width: 200px;
+}
+
+.infos h1 {
+    color: white;
+}
+
+.infos ul li {
+    list-style-type: none;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.infos ul li:hover {
+    color: white;
+}
+
+#footer_logo {
+    text-align: center;
+}
+
+.contact_infos {
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact_infos p:nth-child(2) {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.principal_infos>p,
+.infos ul li {
+    color: #848e94;
+    font-size: 0.82em;
+    font-weight: 500;
+}
+
+.infos i {
+    font-size: 1.3em;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+
+/* credits: */
+
+.credits {
+    background-color: #0d0d11;
+    width: 100%;
+    height: 8.5vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.copyright {
+    justify-content: space-between;
+}
+
+.copyright p {
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+.credits .arrow {
+    position: absolute;
+    right: 1.5%;
+    font-size: 1.4em;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #181820;
+    border-radius: 50%;
+    color: #111117;
+}
+
+
+/*Fine della sezione dei due footer*/
