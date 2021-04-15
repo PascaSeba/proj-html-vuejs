@@ -22,11 +22,10 @@
             <div id="first_header">
                 <div class="date">
                     <i class="fas fa-clock"></i>
-                    <p>Open Hour: {{openHours.openingDay}}{{openHours.closingDay}} {{openHours.openingHour}}{{openHours.closingHour}}</p>
+                    <p>Open Hour: {{openHours.openingDay+openHours.closingDay+openHours.openingHour+openHours.closingHour}}</p>
                 </div>
                 <div class="head_contact_infos">
-                    <p v-for="number in numbers"><i class="fas fa-phone-alt"></i>{{number}}</p>
-                    <p v-for="mail in mails"><i class="fas fa-envelope"></i>{{mail}}</p>
+                    <p v-for="contact in tracking"><i :class="contact.icon"></i>{{contact.value}}</p>
                     <ul class="socials">
                         <li v-for="icon in icons"><i :class="icon"></i></li>
                     </ul>

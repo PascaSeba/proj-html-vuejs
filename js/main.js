@@ -3,18 +3,23 @@ var app = new Vue({
     data: {
         openHours: {
             openingDay: 'Mon - ',
-            closingDay: 'Sat',
-            openingHour: '09:00 - ',
+            closingDay: ' Sat',
+            openingHour: ' - 09:00 - ',
             closingHour: '18:00'
         },
         nav: [
             "Home", "About", "Services", "Pricing", "Blog"
         ],
-        numbers: [
-            "+1 (305) 1234-5678"
-        ],
-        mails: [
-            "hello@example.com"
+        tracking: [{
+                name: "telephone",
+                icon: "fas fa-phone-alt",
+                value: "+1 (305) 1234-5678"
+            },
+            {
+                name: "mail",
+                icon: "fas fa-envelope",
+                value: "hello@example.com"
+            }
         ],
         icons: [
             "fab fa-facebook-f",
