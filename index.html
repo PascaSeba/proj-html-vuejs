@@ -22,7 +22,7 @@
             <div id="first_header">
                 <div class="date">
                     <i class="fas fa-clock"></i>
-                    <p v-for="openHour in openHours">Open Hours: {{openHour}}</p>
+                    <p>Open Hour: {{openHours.openingDay}}{{openHours.closingDay}} {{openHours.openingHour}}{{openHours.closingHour}}</p>
                 </div>
                 <div class="head_contact_infos">
                     <p v-for="number in numbers"><i class="fas fa-phone-alt"></i>{{number}}</p>
@@ -368,7 +368,7 @@
                         <h1 id="footer_logo"><span>NEX</span>GEN</h1>
                         <p>A Functional HTML Template for Corporate & Business.</p>
                         <div class="contact_infos flexed">
-                            <p v-for="element in tracking.contacts"><i class="contact.icons"></i>{{element}}</p>
+                            <p v-for="element in tracking"><i :class="element.icon"></i>{{element.value}}</p>
                         </div>
                         <button>GET IN TOUCH</button>
                     </div>

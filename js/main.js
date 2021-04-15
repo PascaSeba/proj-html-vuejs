@@ -1,11 +1,14 @@
 var app = new Vue({
     el: '#vue_header',
     data: {
+        openHours: {
+            openingDay: 'Mon - ',
+            closingDay: 'Sat',
+            openingHour: '09:00 - ',
+            closingHour: '18:00'
+        },
         nav: [
             "Home", "About", "Services", "Pricing", "Blog"
-        ],
-        openHours: [
-            "Mon - Sat - 9:00 - 18:00"
         ],
         numbers: [
             "+1 (305) 1234-5678"
@@ -22,7 +25,7 @@ var app = new Vue({
     methods: {}
 })
 
-var appDue = new Vue({
+var appTwo = new Vue({
     el: '#vue_footer',
     data: {
         footerInfos: [{
@@ -62,18 +65,19 @@ var appDue = new Vue({
             }
         ],
         tracking: [{
-                contacts: [
-                    "+1 (305) 1234-5678",
-                    "hello@example.com",
-                    "Main Avenue, 987"
-                ]
+                name: "telephone",
+                icon: "fas fa-phone-alt",
+                value: "+1 (305) 1234-5678"
             },
             {
-                icons: [
-                    "fas fa-phone-alt",
-                    "fas fa-envelope",
-                    "fas fa-map-marker-alt"
-                ]
+                name: "mail",
+                icon: "fas fa-envelope",
+                value: "hello@example.com"
+            },
+            {
+                name: "position",
+                icon: "fas fa-map-marker-alt",
+                value: "Main Avenue, 987"
             }
         ]
     }
