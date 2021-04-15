@@ -17,20 +17,18 @@
 <body>
     <!-- Sezione dei due Header + jumbotron -->
     <section>
-        <header>
+        <header id="vue_header">
             <!-- Primo NAV: -->
             <div id="first_header">
                 <div class="date">
                     <i class="fas fa-clock"></i>
-                    <p>Data Data Data</p>
+                    <p v-for="openHour in openHours">Open Hours: {{openHour}}</p>
                 </div>
                 <div class="head_contact_infos">
-                    <p>Telefono</p>
-                    <p>Email</p>
+                    <p v-for="number in numbers"><i class="fas fa-phone-alt"></i>{{number}}</p>
+                    <p v-for="mail in mails"><i class="fas fa-envelope"></i>{{mail}}</p>
                     <ul class="socials">
-                        <li><i class="fab fa-facebook-f"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li v-for="icon in icons"><i :class="icon"></i></li>
                     </ul>
                 </div>
             </div>
@@ -46,14 +44,10 @@
                             <span>NEX</span><span>GEN</span>
                         </div>
 
-                        <div class="nav">
+                        <div class="nav flexed">
                             <ul>
-                                <li>HOME</li>
-                                <li>ABOUT</li>
-                                <li>SERVICES</li>
-                                <li>PRICING</li>
-                                <li>BLOG</li>
-                                <li>GET IN TOUCH (BOTTONE)</li>
+                                <li v-for="page in nav">{{page}}</li>
+                                <button>GET IN TOUCH</button>
                             </ul>
                         </div>
                     </div>
@@ -367,50 +361,21 @@
 
     <!-- Sezione dei due footer -->
     <section>
-        <footer>
+        <footer id="vue_footer">
             <div class="big_footer big_container flexed">
                 <div class="footer container flexed">
                     <div class="principal_infos flexed">
                         <h1 id="footer_logo"><span>NEX</span>GEN</h1>
                         <p>A Functional HTML Template for Corporate & Business.</p>
                         <div class="contact_infos flexed">
-                            <p><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</p>
-                            <p><i class="fas fa-envelope"></i>hello@example.com</p>
-                            <p><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</p>
+                            <p v-for="element in tracking.contacts"><i class="contact.icons"></i>{{element}}</p>
                         </div>
                         <button>GET IN TOUCH</button>
                     </div>
-                    <div class="infos flexed">
-                        <h1>About</h1>
+                    <div v-for="info in footerInfos" class="infos flexed">
+                        <h1>{{info.title}}</h1>
                         <ul>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                        </ul>
-                    </div>
-                    <div class="infos flexed">
-                        <h1>About</h1>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                        </ul>
-                    </div>
-                    <div class="infos flexed">
-                        <h1>About</h1>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
-                            <li><i class="fas fa-angle-right"></i> Ciao Ciao</li>
+                            <li v-for="navElement in info.nav"><i class="fas fa-angle-right"></i> {{navElement}}</li>
                         </ul>
                     </div>
                 </div>

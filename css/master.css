@@ -49,11 +49,35 @@ header .date,
 #first_header,
 .head_contact_infos {
     display: flex;
+    align-items: center;
 }
 
 header .socials li {
     display: inline-block;
     list-style-type: none;
+}
+
+#first_header>* {
+    font-size: 0.8em;
+}
+
+#first_header ul li:hover,
+#first_header p:hover:not(.date p) {
+    color: white;
+    cursor: pointer;
+}
+
+.date i,
+.head_contact_infos p i {
+    margin-right: 6.5px;
+}
+
+.head_contact_infos p {
+    margin-right: 30px;
+}
+
+.socials li {
+    margin-right: 25px;
 }
 
 
@@ -72,19 +96,40 @@ header .socials li {
 #jumbo_overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.699)
+    background-color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 58%;
+    height: fit-content;
+    flex-direction: row;
+}
+
+header #jumbotron .main_nav ul {
+    width: 100%;
 }
 
 header #jumbotron .main_nav ul li {
     display: inline-block;
     list-style-type: none;
+    margin-right: 3%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+header #jumbotron .main_nav ul li:hover {
+    color: #0fbdbd;
 }
 
 #jumbotron .main_nav {
-    width: 100%;
-    justify-content: space-around;
-    align-self: flex-start;
+    width: 60%;
+    justify-content: space-between;
     padding: 10px;
+    margin-top: 1%;
 }
 
 #jumbotron .jumbo_text {
@@ -106,7 +151,7 @@ header #jumbotron .main_nav ul li {
 }
 
 #jumbotron .jumbo_text h1 {
-    font-size: 5em;
+    font-size: 3.8em;
 }
 
 
@@ -772,28 +817,41 @@ form select,
 
 .footer {
     height: fit-content;
-    justify-content: space-between;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
+    justify-content: center;
 }
 
 .infos,
 .principal_infos {
     flex-direction: column;
-    width: calc(93%/4);
     height: 33vh;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 .infos {
     background-color: #19191f;
-    padding: 35px;
-    width: 200px;
+    padding: 32px;
+    width: 22%;
+    border-radius: 5px;
+}
+
+.infos ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal_infos {
+    width: 21%;
 }
 
 .infos h1 {
     color: white;
+    font-size: 1.1em;
+    width: 70%;
 }
 
 .infos ul li {
@@ -806,6 +864,10 @@ form select,
     color: white;
 }
 
+.infos ul li i {
+    margin-left: 5px;
+}
+
 #footer_logo {
     text-align: center;
 }
@@ -813,6 +875,16 @@ form select,
 .contact_infos {
     flex-direction: column;
     width: 100%;
+}
+
+.contact_infos p {
+    color: #848e94;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.contact_infos p i {
+    margin-right: 10px;
 }
 
 .contact_infos p:nth-child(2) {
