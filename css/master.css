@@ -501,6 +501,10 @@ header #jumbotron .main_nav ul li:hover {
     width: fit-content;
 }
 
+.services h1 span {
+    color: white;
+}
+
 
 /* Fine della sezione dei servizi della compagnia */
 
