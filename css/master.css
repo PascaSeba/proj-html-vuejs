@@ -73,6 +73,7 @@ header .moreall_button {
 .logo_h1 {
     font-size: 0.95em;
     color: rgb(201, 201, 201);
+    cursor: pointer;
 }
 
 #my_logo {
@@ -82,6 +83,16 @@ header .moreall_button {
     border-bottom-left-radius: 30px;
     padding: 10px;
     padding-left: 20px;
+}
+
+.paragraph_title {
+    font-size: 2.4em!important;
+}
+
+.title_modified {
+    color: #027777;
+    background-color: #00a6a628;
+    padding: 5px 15px 5px 15px;
 }
 
 
@@ -236,14 +247,15 @@ header #jumbotron .main_nav ul li:hover {
     align-items: center;
     background-color: white;
     flex-direction: column;
-    padding: 40px;
+    padding: 35px;
     margin: 10px;
+    border-radius: 5px;
 }
 
 #offers .human>*,
 #offers .core>*,
 #offers .performances>* {
-    padding: 3px;
+    padding: 10px;
     justify-content: center;
 }
 
@@ -270,6 +282,13 @@ header #jumbotron .main_nav ul li:hover {
     object-fit: contain;
 }
 
+.offers_text {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #038b8b;
+    line-height: 20px;
+}
+
 
 /* Fine della sezione del tipo di offerte */
 
@@ -287,7 +306,7 @@ header #jumbotron .main_nav ul li:hover {
     ---carattere o padding/margin e simili--- */
 
 .company_head {
-    width: 29.9%;
+    width: 31%;
     height: fit-content;
     margin-left: 20%;
     align-self: center;
@@ -297,12 +316,14 @@ header #jumbotron .main_nav ul li:hover {
 .company_head h6 {
     color: #05817e;
     font-size: 0.8em;
+    margin-bottom: 20px;
 }
 
 .company_head p {
     color: #848e94;
     font-size: 0.9em;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .company_head h6,
@@ -340,10 +361,6 @@ header #jumbotron .main_nav ul li:hover {
     display: inline-block;
 }
 
-.company_head h3 {
-    padding-bottom: 20px;
-}
-
 .company img {
     object-fit: cover;
     width: 55.2%;
@@ -357,7 +374,7 @@ header #jumbotron .main_nav ul li:hover {
     background-image: url(../img/bullets.png);
     top: -3.7%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-41.5%);
     background-size: cover;
     height: 7.3%;
     width: 7.3%;
@@ -370,7 +387,7 @@ header #jumbotron .main_nav ul li:hover {
     background-image: url(../img/bullets.png);
     bottom: -3.7%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-41.5%);
     background-size: cover;
     height: 7.3%;
     width: 7.3%;
@@ -421,12 +438,16 @@ header #jumbotron .main_nav ul li:hover {
     padding-bottom: 40px;
 }
 
+.explane p {
+    width: 100%;
+}
+
 .services .explane p,
 .news p {
     color: #848e94;
     display: inline-block;
     width: 70%;
-    font-size: 0.9em;
+    font-size: 0.82em;
     font-weight: 500;
 }
 
@@ -466,9 +487,9 @@ header #jumbotron .main_nav ul li:hover {
 }
 
 .service_col p {
-    color: #b8c1d0;
-    font-size: 0.9em;
-    font-weight: 500;
+    color: #038b8b;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 .service_col i {
@@ -495,6 +516,8 @@ header #jumbotron .main_nav ul li:hover {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing>h1 {
@@ -507,8 +530,13 @@ header #jumbotron .main_nav ul li:hover {
 .example p,
 .copyright p {
     color: #848e94;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 500;
+}
+
+.pricing p {
+    width: 70%;
+    align-self: center;
 }
 
 .prices {
@@ -620,6 +648,7 @@ header #jumbotron .main_nav ul li:hover {
 
 .news_container {
     justify-content: center;
+    align-items: center;
 }
 
 .news {
@@ -916,7 +945,7 @@ form select,
 .infos {
     background-color: #19191f;
     padding: 32px;
-    width: 22%;
+    width: 23%;
     border-radius: 5px;
 }
 
