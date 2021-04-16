@@ -46,6 +46,7 @@ select {
     font-weight: 500;
     border: none;
     outline: none;
+    transition: 0.1s;
 }
 
 .moreall_button {
@@ -62,6 +63,7 @@ header .moreall_button {
 .touch_button:hover,
 .moreall_button:hover {
     background-color: #038b8b;
+    transform: scale(1.01);
 }
 
 .nav .touch_button {
@@ -250,6 +252,7 @@ header #jumbotron .main_nav ul li:hover {
     padding: 35px;
     margin: 10px;
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 #offers .human>*,
@@ -287,6 +290,12 @@ header #jumbotron .main_nav ul li:hover {
     font-weight: 500;
     color: #038b8b;
     line-height: 20px;
+}
+
+.human:hover,
+.core:hover,
+.performances:hover {
+    transform: scale(1.05);
 }
 
 
@@ -505,6 +514,14 @@ header #jumbotron .main_nav ul li:hover {
     color: white;
 }
 
+.service_col:hover i {
+    color: white;
+}
+
+.service_col:hover button {
+    background-color: #00a6a6;
+}
+
 
 /* Fine della sezione dei servizi della compagnia */
 
@@ -556,6 +573,8 @@ header #jumbotron .main_nav ul li:hover {
     justify-content: space-between;
     flex-direction: column;
     margin-top: 50px;
+    position: relative;
+    transition: 0.5s;
 }
 
 .popular_position {
@@ -641,7 +660,24 @@ header #jumbotron .main_nav ul li:hover {
 
 .pricing>h1 {
     color: #2b373f;
-    ;
+}
+
+.arrow_right {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.3em;
+    color: #848e94;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.price:hover .arrow_right {
+    visibility: visible;
+}
+
+.price:hover {
+    transform: scale(1.02);
 }
 
 
@@ -691,7 +727,36 @@ header #jumbotron .main_nav ul li:hover {
     border-radius: 10px;
     justify-content: center;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.overlay p i {
+    margin-right: 10px;
+}
+
+.news_user {
+    left: 8%;
+}
+
+.news_user,
+.news_time {
+    visibility: hidden;
+    position: absolute;
+    top: 7%;
+}
+
+.news_time {
+    left: 58%;
+}
+
+.overlay:hover .news_user,
+.overlay:hover .news_time {
+    visibility: visible;
+    color: white;
+    font-size: 0.9em;
 }
 
 .background_one {
@@ -713,11 +778,36 @@ header #jumbotron .main_nav ul li:hover {
     background-repeat: no-repeat;
 }
 
-.new h3 {
+.new {
+    transition: 0.5s;
+}
+
+.new h3,
+.description {
     color: white;
     text-align: center;
-    padding-bottom: 35px;
+    padding-bottom: 2px;
     width: 80%;
+}
+
+.overlay:hover h3 {
+    padding-bottom: 10px;
+}
+
+.description {
+    font-size: 0px;
+    color: rgb(201, 201, 201)!important;
+    visibility: hidden;
+}
+
+.overlay:hover .description {
+    font-size: 0.8em;
+    visibility: visible;
+    padding-bottom: 30px;
+}
+
+.new:hover {
+    transform: scale(1.03);
 }
 
 
@@ -1052,6 +1142,10 @@ form select,
     background-color: #181820;
     border-radius: 50%;
     color: #111117;
+}
+
+footer button {
+    width: 145px!important;
 }
 
 

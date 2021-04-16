@@ -206,6 +206,7 @@
                 <p>We can help you deliver and execute your future, wherever you compete, using the latest technologies, from strategy development to implementation.</p>
                 <div class="prices flexed">
                     <div class="price flexed">
+                        <i class="fas fa-arrow-right arrow_right"></i>
                         <div class="main_info">
                             <i class="fas fa-rocket"></i>
                             <h3>Standard</h3>
@@ -220,6 +221,7 @@
                         </div>
                     </div>
                     <div class="price flexed centered_col popular_position">
+                        <i class="fas fa-arrow-right arrow_right"></i>
                         <span id="popular">Most<br>Popular</span>
                         <div class="main_info">
                             <i class="fas fa-briefcase"></i>
@@ -235,6 +237,7 @@
                         </div>
                     </div>
                     <div class="price flexed">
+                        <i class="fas fa-arrow-right arrow_right"></i>
                         <div class="main_info">
                             <i class="far fa-gem"></i>
                             <h3>Ultimate</h3>
@@ -270,17 +273,26 @@
                 <div class="last_news flexed">
                     <div class="new background_one">
                         <div class="overlay">
+                            <p class="news_user"><i class="fas fa-user"></i>Andrea Miller</p>
+                            <p class="news_time"><i class="fas fa-clock"></i>2 days ago</p>
                             <h3>Increasing creativity is possible for everyone</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="new background_two centered_col">
                         <div class="overlay">
+                            <p class="news_user"><i class="fas fa-user"></i>Ezra Lightwood</p>
+                            <p class="news_time"><i class="fas fa-clock"></i>1 day ago</p>
                             <h3>Because market research is part of the business plan</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="new background_three">
                         <div class="overlay">
+                            <p class="news_user"><i class="fas fa-user"></i>Katy Perry</p>
+                            <p class="news_time"><i class="fas fa-clock"></i>2 days ago</p>
                             <h3>Working form home is now a trend</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -369,7 +381,7 @@
                         <div class="contact_infos flexed">
                             <p v-for="element in tracking"><i :class="element.icon"></i>{{element.value}}</p>
                         </div>
-                        <button class="touch_button">GET IN TOUCH</button>
+                        <button class="moreall_button">GET IN TOUCH</button>
                     </div>
                     <div v-for="info in footerInfos" class="infos flexed">
                         <h1>{{info.title}}</h1>
