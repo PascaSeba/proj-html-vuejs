@@ -49,8 +49,14 @@ select {
 }
 
 .moreall_button {
-    background-color: #00a6a6;
+    background-color: inherit;
     color: whitesmoke;
+    border: 1px solid #00a6a6a9;
+    width: 125px;
+}
+
+header .moreall_button {
+    width: 145px;
 }
 
 .touch_button:hover,
@@ -62,6 +68,20 @@ select {
     vertical-align: middle;
     width: 180px;
     height: fit-content;
+}
+
+.logo_h1 {
+    font-size: 0.95em;
+    color: rgb(201, 201, 201);
+}
+
+#my_logo {
+    color: #00a6a6;
+    background-color: #00a6a63a;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
 }
 
 
@@ -112,6 +132,13 @@ header .socials li {
 
 .socials li {
     margin-right: 25px;
+}
+
+.jumbo_text p {
+    color: rgb(173, 170, 170);
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 22px;
 }
 
 
@@ -186,7 +213,8 @@ header #jumbotron .main_nav ul li:hover {
 }
 
 #jumbotron .jumbo_text h1 {
-    font-size: 3.8em;
+    font-size: 3.7em;
+    font-weight: 900;
 }
 
 
@@ -289,8 +317,18 @@ header #jumbotron .main_nav ul li:hover {
     color: #2b373f;
 }
 
+.company i {
+    margin-right: 7px;
+    color: #00a6a6;
+}
+
 .company_head>p {
     padding-bottom: 30px;
+    font-size: 0.8em;
+}
+
+.block p {
+    font-size: 0.8em;
 }
 
 .company_head .tradition,
@@ -303,12 +341,12 @@ header #jumbotron .main_nav ul li:hover {
 }
 
 .company_head h3 {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .company img {
     object-fit: cover;
-    width: 55%;
+    width: 55.2%;
     height: 90vh;
     padding-left: 25px;
 }
@@ -337,6 +375,10 @@ header #jumbotron .main_nav ul li:hover {
     height: 7.3%;
     width: 7.3%;
     opacity: 0.40;
+}
+
+.second_block {
+    padding-left: 10px;
 }
 
 
